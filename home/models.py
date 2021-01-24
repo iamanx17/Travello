@@ -8,3 +8,6 @@ class destination(models.Model):
     price=models.IntegerField()
     offer=models.BooleanField(default=False)
     image=models.ImageField(upload_to='pics')
+    
+    def __str__(self):
+        return self.name
